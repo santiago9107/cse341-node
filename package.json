@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2"
+  },
+  "name": "cse341-node",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "start-server": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santiago9107/cse341-node.git"
+  },
+  "author": "Santiago Enriquez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/santiago9107/cse341-node/issues"
+  },
+  "homepage": "https://github.com/santiago9107/cse341-node#readme",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
