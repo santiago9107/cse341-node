@@ -35,13 +35,13 @@ app.use(errorController.get404);
 
 mongoose
   .connect(
-    'mongodb+srv://santiago9107:<password>@cluster0.ecfqf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+    'mongodb+srv://santiago9107:Quimicaf9107@cluster0.ecfqf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
   )
   .then(result => {
     User.findOne().then(user => {
       if (!user) {
         const user = new User({
-          name: 'Santiago',
+          name: 'santiago9107',
           email: 'enr18002@byui.edu',
           cart: {
             items: []
