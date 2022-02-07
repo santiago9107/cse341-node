@@ -69,7 +69,7 @@ app.use(errorController.get404);
 mongoose
   .connect(MONGODB_URI)
   .then(result => {
-    app.listen(PORT);
+    app.listen(PATH);
   })
   .catch(err => {
     console.log(err);
