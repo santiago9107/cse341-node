@@ -23,6 +23,7 @@ exports.postAddProduct = (req, res, next) => {
   product
     .save()
     .then(result => {
+      // console.log(result);
       console.log('Created Product');
       res.redirect('/admin/products');
     })
@@ -76,6 +77,8 @@ exports.postEditProduct = (req, res, next) => {
 
 exports.getProducts = (req, res, next) => {
   Product.find()
+    // .select('title price -_id')
+    // .populate('userId', 'name')
     .then(products => {
       console.log(products);
       res.render('admin/products', {
@@ -96,4 +99,3 @@ exports.postDeleteProduct = (req, res, next) => {
     })
     .catch(err => console.log(err));
 };
-
