@@ -9,6 +9,7 @@
     "express": "^4.17.2",
     "express-handlebars": "3.0",
     "express-session": "^1.17.2",
+    "express-validator": "^6.14.0",
     "expressjs": "^1.0.1",
     "heroku": "^7.59.2",
     "mongodb": "^4.3.1",
